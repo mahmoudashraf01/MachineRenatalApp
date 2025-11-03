@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0;
+    line-height: 100%;
+  }
+}
+
+@theme{
+  --color-primary: #FFFFFF;
+  --color-primaryBtn: #1F6FEB;
+  --color-secondary: #F6C90E;
+  --color-navColor: #0A2540;
+  --color-equipmentBg: rgba(244, 245, 247, 1)
+}
