@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import HeroImg from '../../assets/hero1.jpg'
 import Landing from '../../assets/Landing.jpg'
+import SearchContainer from './SearchContainer';
 
 const Hero = () => {
     return (
@@ -22,14 +23,7 @@ const Hero = () => {
                 <div className='w-full flex justify-center items-center '>
                     <p className=' text-center text-primary text-base sm:text-lg  md:text-[20px]'>The most trusted platform for reliable, safe, and efficient machine rentals.</p>
                 </div>
-                <div className='md:flex max-sm:flex gap-2.5 my-6'>
-                    <button className='bg-primaryBtn p-2.5 md:w-[260px] sm:w-40 md:h-[46px] sm:h-[20] rounded-md'>
-                        Find Equipment
-                    </button>
-                    <button className='bg-secondary p-2.5 md:w-[260px] sm:w-40 md:h-[46px] sm:h-[20] rounded-md'>
-                        List Your Machines
-                    </button>
-                </div>
+                <SearchContainer />
                 <div className='flex gap-2.5'>
                     <div className='flex justify-between items-center gap-2.5 p-2'>
                         <div className=' w-2.5 h-2.5 bg-secondary rounded-full'></div>

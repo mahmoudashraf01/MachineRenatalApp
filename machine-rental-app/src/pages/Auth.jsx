@@ -5,7 +5,7 @@ import Register from '../components/Auth/Register';
 
 const Auth = () => {
     return (
-        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen bg-[#F4F5F7]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen bg-[#F4F5F7]">
             <div className="relative hidden lg:flex items-center justify-center rounded-r-3xl overflow-hidden">
                 {/* الصورة */}
                 <img
