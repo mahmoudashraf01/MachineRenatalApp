@@ -5,6 +5,7 @@ import Equipments from '../components/Landing/Equipments';
 import Serveys from '../components/Landing/Serveys';
 import Footer from '../components/Landing/Footer';
 import HowItWorks from '../components/Landing/HowItWorks';
+import WhyChoose from '../components/Landing/WhyChoose';
 
 
 const Landing = () => {
@@ -14,6 +15,7 @@ const Landing = () => {
             <Hero />
             <Equipments />
             <HowItWorks />
+            <WhyChoose />
             <Serveys />
             <Footer />
         </>
