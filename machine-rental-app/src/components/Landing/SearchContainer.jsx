@@ -3,7 +3,7 @@ import { FaSearch, FaMapMarkerAlt, FaBox, FaCalendarAlt } from "react-icons/fa";
 
 const SearchContainer = () => {
     return (
-        <div className=" max-sm:w-full max-sm:px-10">
+        <div className=" w-full px-10">
             <div className="w-full bg-white shadow-md rounded-2xl p-6 flex flex-col gap-4">
                 {/* Desktop & Large Screens */}
                 <div className=" grid lg:grid-cols-5 md:grid-cols-4 gap-4 items-end">

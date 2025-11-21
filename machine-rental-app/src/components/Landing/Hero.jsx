@@ -5,7 +5,7 @@ import SearchContainer from './SearchContainer';
 
 const Hero = () => {
     return (
-        <div className="relative h-[760px] w-full flex items-center justify-center overflow-hidden">
+        <div className="relative h-[800px] w-full flex items-center justify-center overflow-hidden">
             <img
                 src={HeroImg}
                 alt="hero"

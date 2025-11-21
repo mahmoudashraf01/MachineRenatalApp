@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Home from './pages/home'
+import Landing from './pages/Landing'
 import Auth from './pages/Auth'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <Landing />
       {/* <Auth /> */}
     </>
   )
