@@ -19,7 +19,7 @@ const NavBar = () => {
                 <h1 className=' text-[26px] font-semibold text-primary pt-[18px]'>MachineRentals.</h1>
             </div>
             <div>
-                <ul className='hidden md:flex'>
+                <ul className='hidden lg:flex'>
                     <li className='p-4 text-[18px]  font-medium'>Home</li>
                     <li className='p-4 text-[18px] font-medium'>Machines</li>
                     <li className='p-4 text-[18px] font-medium'>About</li>
@@ -27,11 +27,11 @@ const NavBar = () => {
                     <li className='p-4 text-[18px] font-medium'>Contact</li>
                 </ul>
             </div>
-            <div className='flex max-sm:hidden justify-between gap-2.5'>
+            <div className='hidden lg:flex justify-between gap-2.5'>
                 <PrimaryButton />
                 <SecondaryButton />
             </div>
-            <div onClick={handleNav} className='block md:hidden'>
+            <div onClick={handleNav} className='block lg:hidden'>
                 {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
             <ul className={!nav ? 'fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full z-50 bg-navColor ease-in-out duration-500' : 'fixed -left-full top-0 w-[60%] border-r border-r-gray-900 h-full bg-navColor z-50 ease-in-out duration-500'}>
