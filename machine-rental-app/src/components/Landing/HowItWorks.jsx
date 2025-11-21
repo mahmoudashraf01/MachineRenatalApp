@@ -3,16 +3,16 @@ import { FaSearch, FaPaperPlane, FaBars } from "react-icons/fa";
 
 const HowItWorks = () => {
     return (
-        <div className="w-full py-16 px-6 flex flex-col items-center text-center">
+        <div className="w-full  py-16 px-6 flex flex-col items-center text-center">
             {/* Title */}
             <h2 className="text-3xl font-bold text-gray-900">How It Works</h2>
             <p className="text-gray-600 mt-2 max-w-xl">
                 Get started in three easy steps. Simple, fast, and reliable.
             </p>
 
-
             {/* Steps */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl">
+            <div className="relative mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl">
+                <div className='max-md:hidden max-sm:hidden absolute w-full border-b-2 border-gray-200 py-4 top-10'></div>
                 {/* Step 1 */}
                 <div className="flex flex-col items-center w-full">
                     <div className="relative">
