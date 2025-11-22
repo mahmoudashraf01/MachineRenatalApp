@@ -11,7 +11,6 @@ import WhyChoose from '../components/Landing/WhyChoose';
 const Landing = () => {
     return (
         <>
-            <NavBar />
             <Hero />
             <Equipments />
             <HowItWorks />
