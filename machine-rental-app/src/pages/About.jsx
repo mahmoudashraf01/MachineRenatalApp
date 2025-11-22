@@ -1,11 +1,14 @@
 import { memo } from 'react';
+import Hero from '../components/Landing/Hero';
+import AboutHero from '../components/About/AboutHero';
 
 const About = () => {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
+    return (
+        <>
+            <AboutHero />
+
+        </>
+    );
 };
 
 export default memo(About);
