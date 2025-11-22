@@ -14,9 +14,9 @@ const NavBar = () => {
 
     return (
         <div className='flex justify-between items-center h-24 bg-navColor mx-auto px-4 text-primary'>
-            <button  >
+            <NavLink to='/'>
                 <img src={Logo} alt="" />
-            </button>
+            </NavLink>
             <div>
                 <ul className='hidden lg:flex'>
                     <li className='p-4'>
