@@ -2,7 +2,7 @@ import { memo } from 'react';
 import Hero from '../components/Landing/Hero';
 import Equipments from '../components/Landing/Equipments';
 import Serveys from '../components/Landing/Serveys';
-import Footer from '../components/Landing/Footer';
+import Footer from '../components/Footer';
 import HowItWorks from '../components/Landing/HowItWorks';
 import WhyChoose from '../components/Landing/WhyChoose';
 

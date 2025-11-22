@@ -2,6 +2,8 @@ import { memo } from 'react';
 import { TbBrandFacebook } from 'react-icons/tb';
 import { FaInstagram } from 'react-icons/fa';
 import { TbBrandLinkedin } from 'react-icons/tb';
+import Logo from '../assets/Logo2.svg';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,10 +12,9 @@ const Footer = () => {
                 <div className='grid gap-5 lg:grid-cols-[1fr_1.5fr] w-full '>
                     <div className='flex flex-col gap-5 lg:items-start items-center'>
                         <div className='flex items-center gap-2.5'>
-                            <button className='bg-secondary w-[50px] h-[50px] p-2.5  rounded-md text-[12px] font-medium'>
-                                Logo
-                            </button>
-                            <h1 className='text-[26px] font-semibold text-primary '>MachineRentals.</h1>
+                            <NavLink to='/'>
+                                <img src={Logo} alt="" />
+                            </NavLink>
                         </div>
                         <p className='text-[16px] lg:text-start leading-relaxed text-center font-normal text-[#FFFFFFCC]'>The most trusted platform for reliable, safe, and efficient heavy  equipment rentals. Connecting construction professionals with verified  suppliers nationwide.</p>
                     </div>

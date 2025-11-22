@@ -5,7 +5,7 @@ import Impact from '../components/About/impact';
 import MesionVesion from '../components/About/MesionVesion';
 import CoreValues from '../components/About/CoreValues';
 import Serveys from '../components/Landing/Serveys';
-import Footer from '../components/Landing/Footer';
+import Footer from '../components/Footer';
 
 const About = () => {
     return (
