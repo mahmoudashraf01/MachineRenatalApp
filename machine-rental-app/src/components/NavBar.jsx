@@ -1,4 +1,5 @@
-import Rect, { memo, useState } from 'react';
+import React, { memo, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import PrimaryButton from './buttons/PrimaryButton';
 import SecondaryButton from './buttons/SecondaryButton';
@@ -20,11 +21,63 @@ const NavBar = () => {
             </div>
             <div>
                 <ul className='hidden lg:flex'>
-                    <li className='p-4 text-[18px]  font-medium'>Home</li>
-                    <li className='p-4 text-[18px] font-medium'>Machines</li>
-                    <li className='p-4 text-[18px] font-medium'>About</li>
-                    <li className='p-4 text-[18px] font-medium'>About</li>
-                    <li className='p-4 text-[18px] font-medium'>Contact</li>
+                    <li className='p-4'>
+                        <NavLink
+                            to='/'
+                            end
+                            className={({ isActive }) =>
+                                `text-[18px] font-medium transition-colors duration-150 ${
+                                    isActive
+                                        ? 'text-secondary underline decoration-secondary decoration-2'
+                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                }`
+                            }
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li className='p-4'>
+                        <NavLink
+                            to='/machines'
+                            className={({ isActive }) =>
+                                `text-[18px] font-medium transition-colors duration-150 ${
+                                    isActive
+                                        ? 'text-secondary underline decoration-secondary decoration-2'
+                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                }`
+                            }
+                        >
+                            Machines
+                        </NavLink>
+                    </li>
+                    <li className='p-4'>
+                        <NavLink
+                            to='/about'
+                            className={({ isActive }) =>
+                                `text-[18px] font-medium transition-colors duration-150 ${
+                                    isActive
+                                        ? 'text-secondary underline decoration-secondary decoration-2'
+                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                }`
+                            }
+                        >
+                            About
+                        </NavLink>
+                    </li>
+                    <li className='p-4'>
+                        <NavLink
+                            to='/contact'
+                            className={({ isActive }) =>
+                                `text-[18px] font-medium transition-colors duration-150 ${
+                                    isActive
+                                        ? 'text-secondary underline decoration-secondary decoration-2'
+                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                }`
+                            }
+                        >
+                            Contact
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
             <div className='hidden lg:flex justify-between gap-2.5'>
@@ -41,10 +94,18 @@ const NavBar = () => {
                     </button>
                     <h1 className=' text-[12px] font-semibold text-primary '>MachineRentals.</h1>
                 </div>
-                <li className='p-4 border-b border-gray-300'>Home</li>
-                <li className='p-4 border-b border-gray-300'>Machines</li>
-                <li className='p-4 border-b border-gray-300'>About</li>
-                <li className='p-4 border-b border-gray-300'>Contact</li>
+                <li className='p-4 border-b border-gray-300'>
+                    <NavLink to='/' end className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>Home</NavLink>
+                </li>
+                <li className='p-4 border-b border-gray-300'>
+                    <NavLink to='/machines' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>Machines</NavLink>
+                </li>
+                <li className='p-4 border-b border-gray-300'>
+                    <NavLink to='/about' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>About</NavLink>
+                </li>
+                <li className='p-4 border-b border-gray-300'>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>Contact</NavLink>
+                </li>
             </ul>
         </div>
     );

@@ -34,3 +34,25 @@
   background-size: 300% 300%;
   animation: border-spin 4s linear infinite;
 }
+
+/* Page fade-in used when route content changes */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-page-fade {
+  animation: fade-in 300ms ease-in-out both;
+}
+
+/* Convert @theme variables to :root if still present (defensive) */
+@supports ( --custom: 0 ) {
+  :root {
+    /* keep CSS variables for legacy usage if any */
+    --color-primary: #FFFFFF;
+    --color-primaryBtn: #1F6FEB;
+    --color-secondary: #F6C90E;
+    --color-navColor: #0A2540;
+    --color-equipmentBg: rgba(244, 245, 247, 1);
+  }
+}

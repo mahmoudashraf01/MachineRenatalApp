@@ -4,6 +4,9 @@ import { useRoutes } from "react-router-dom";
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Layout from './components/Layout'
+import Contact from './pages/contact';
+import Machines from './pages/MAchines';
+import About from './pages/About';
 
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
         { index: true, element: <Landing /> },
         { path: 'login', element: <Login /> },
         { path: 'register', element: <Register /> },
+        { path: 'machines', element: <Machines /> },
+        { path: 'contact', element: <Contact /> },
+        { path: 'about', element: <About /> },
         { path: '*', element: <Landing /> },
       ],
     },

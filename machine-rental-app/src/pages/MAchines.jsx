@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-const MAchines = () => {
+const Machines = () => {
   return (
     <div>
       <h2>MAchines</h2>
@@ -8,4 +8,4 @@ const MAchines = () => {
   );
 };
 
-export default memo(MAchines);
+export default memo(Machines);

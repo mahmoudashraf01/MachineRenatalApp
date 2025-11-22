@@ -1,5 +1,4 @@
 import { memo } from 'react';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Landing/Hero';
 import Equipments from '../components/Landing/Equipments';
 import Serveys from '../components/Landing/Serveys';
