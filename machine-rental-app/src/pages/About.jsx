@@ -16,7 +16,6 @@ const About = () => {
             <CoreValues />
             <Serveys/>
             <Footer/>
-
         </>
     );
 };

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import PrimaryButton from './buttons/PrimaryButton';
 import SecondaryButton from './buttons/SecondaryButton';
+import Logo from '../assets/logo2.svg';
 
 const NavBar = () => {
     const [nav, setNav] = useState(true);
@@ -13,12 +14,9 @@ const NavBar = () => {
 
     return (
         <div className='flex justify-between items-center h-24 bg-navColor mx-auto px-4 text-primary'>
-            <div className='flex justify-between gap-3'>
-                <button className='bg-secondary w-[5opx] h-[50px] p-2.5  rounded-md text-[18px] font-medium'>
-                    Logo
-                </button>
-                <h1 className=' text-[26px] font-semibold text-primary pt-[18px]'>MachineRentals.</h1>
-            </div>
+            <button  >
+                <img src={Logo} alt="" />
+            </button>
             <div>
                 <ul className='hidden lg:flex'>
                     <li className='p-4'>
@@ -26,10 +24,9 @@ const NavBar = () => {
                             to='/'
                             end
                             className={({ isActive }) =>
-                                `text-[18px] font-medium transition-colors duration-150 ${
-                                    isActive
-                                        ? 'text-secondary underline decoration-secondary decoration-2'
-                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                `text-[18px] font-medium transition-colors duration-150 ${isActive
+                                    ? 'text-secondary underline decoration-secondary decoration-2'
+                                    : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
                                 }`
                             }
                         >
@@ -40,10 +37,9 @@ const NavBar = () => {
                         <NavLink
                             to='/machines'
                             className={({ isActive }) =>
-                                `text-[18px] font-medium transition-colors duration-150 ${
-                                    isActive
-                                        ? 'text-secondary underline decoration-secondary decoration-2'
-                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                `text-[18px] font-medium transition-colors duration-150 ${isActive
+                                    ? 'text-secondary underline decoration-secondary decoration-2'
+                                    : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
                                 }`
                             }
                         >
@@ -54,10 +50,9 @@ const NavBar = () => {
                         <NavLink
                             to='/about'
                             className={({ isActive }) =>
-                                `text-[18px] font-medium transition-colors duration-150 ${
-                                    isActive
-                                        ? 'text-secondary underline decoration-secondary decoration-2'
-                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                `text-[18px] font-medium transition-colors duration-150 ${isActive
+                                    ? 'text-secondary underline decoration-secondary decoration-2'
+                                    : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
                                 }`
                             }
                         >
@@ -68,10 +63,9 @@ const NavBar = () => {
                         <NavLink
                             to='/contact'
                             className={({ isActive }) =>
-                                `text-[18px] font-medium transition-colors duration-150 ${
-                                    isActive
-                                        ? 'text-secondary underline decoration-secondary decoration-2'
-                                        : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
+                                `text-[18px] font-medium transition-colors duration-150 ${isActive
+                                    ? 'text-secondary underline decoration-secondary decoration-2'
+                                    : 'text-white hover:text-secondary hover:underline hover:decoration-secondary'
                                 }`
                             }
                         >
