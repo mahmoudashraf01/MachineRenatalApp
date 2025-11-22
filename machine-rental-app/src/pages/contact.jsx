@@ -1,11 +1,14 @@
 import { memo } from 'react';
+import HeroContact from '../components/contact/HeroContact';
+import ContactSection from '../components/contact/ContactSection';
 
 const Contact = () => {
-  return (
-    <div>
-      <h2>Contact</h2>
-    </div>
-  );
+    return (
+        <>
+            <HeroContact />
+            <ContactSection/>
+        </>
+    );
 };
 
 export default memo(Contact);
