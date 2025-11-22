@@ -7,7 +7,7 @@ const MesionVesion = () => {
         <div className="w-full flex flex-col lg:flex-row gap-6 items-center justify-center p-6">
 
             {/* Mission Card */}
-            <div className="w-full flex gap-4 lg:w-1/2 bg-white rounded-2xl shadow-md p-6 shadow-gray-400 ">
+            <div className="w-full lg:flex md:flex gap-4 lg:w-1/2 bg-white rounded-2xl shadow-md p-6 shadow-gray-400 ">
                 {/* Icon */}
                 <div className="w-12 h-12 rounded-xl bg-yellow-400 flex items-center justify-center mb-4">
                     <img src={groupVector} alt="" className='w-6 h-6' />
@@ -31,7 +31,7 @@ const MesionVesion = () => {
             </div>
 
             {/* Vision Card */}
-            <div className="w-full flex gap-4 lg:w-1/2 bg-white rounded-2xl shadow-md p-6 shadow-gray-400">
+            <div className="w-full lg:flex md:flex  gap-4 lg:w-1/2 bg-white rounded-2xl shadow-md p-6 shadow-gray-400">
                 {/* Icon */}
                 <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mb-4">
                     <FaEye className="text-white text-xl" />
