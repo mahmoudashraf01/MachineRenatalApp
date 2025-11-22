@@ -3,6 +3,7 @@ import Hero from '../components/Landing/Hero';
 import AboutHero from '../components/About/AboutHero';
 import Impact from '../components/About/impact';
 import MesionVesion from '../components/About/MesionVesion';
+import CoreValues from '../components/About/CoreValues';
 
 const About = () => {
     return (
@@ -10,6 +11,7 @@ const About = () => {
             <AboutHero />
             <Impact />
             <MesionVesion />
+            <CoreValues />
 
         </>
     );
