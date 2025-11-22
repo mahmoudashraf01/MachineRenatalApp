@@ -19,7 +19,7 @@ const CoreValues = () => {
             {/* Cards */}
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
                 {/* Card 1 */}
-                <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
+                <div className="bg-white p-6 rounded-xl border-t border-primaryBtn shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-2xl">
                         <img src={Verify} alt="" />
                     </div>
@@ -31,7 +31,7 @@ const CoreValues = () => {
 
 
                 {/* Card 2 */}
-                <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
+                <div className="bg-white p-6 rounded-xl border-t border-yellow-500 shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-yellow-100 text-yellow-500 flex items-center justify-center text-2xl">
                         <FaBolt />
                     </div>
@@ -43,7 +43,7 @@ const CoreValues = () => {
 
 
                 {/* Card 3 */}
-                <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
+                <div className="bg-white p-6 rounded-xl border-t border-[#1B9C85] shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center text-2xl">
                          <img src={Transperancy} alt="" />
                     </div>
@@ -55,7 +55,7 @@ const CoreValues = () => {
 
 
                 {/* Card 4 */}
-                <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
+                <div className="bg-white p-6 rounded-xl border-t border-[#1B9C85] shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center text-2xl">
                          <img src={Efficiency} alt="" />
                     </div>
@@ -66,7 +66,7 @@ const CoreValues = () => {
                 </div>
 
                 {/* Card 5 */}
-                <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
+                <div className="bg-white p-6 rounded-xl border-t border-primaryBtn shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center text-2xl">
                          <img src={Verify} alt="" />
                     </div>
@@ -76,7 +76,7 @@ const CoreValues = () => {
                     </p>
                 </div>
                 {/* Card 6 */}
-                <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
+                <div className="bg-white p-6 rounded-xl border-t border-yellow-500 shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-[#F6C90E40] flex items-center justify-center text-2xl">
                         <img src={Support} alt="" />
                     </div>
