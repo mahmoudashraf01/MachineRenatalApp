@@ -20,7 +20,6 @@ const HeroContact = () => {
             <div className='w-full flex justify-center items-center '>
                 <p className=' text-center text-primary text-base text-[20px] leading-relaxed'>Our support team assists you with rentals, machine listings, delivery options, and account help.</p>
             </div>
-
         </div>
     </div>
     );

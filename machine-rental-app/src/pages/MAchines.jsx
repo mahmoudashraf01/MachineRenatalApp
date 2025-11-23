@@ -1,11 +1,12 @@
 import { memo } from 'react';
+import MachineHero from '../components/Machines/MachineHero';
 
 const Machines = () => {
-  return (
-    <div>
-      <h2>MAchines</h2>
-    </div>
-  );
+    return (
+        <>
+            <MachineHero />
+        </>
+    );
 };
 
 export default memo(Machines);

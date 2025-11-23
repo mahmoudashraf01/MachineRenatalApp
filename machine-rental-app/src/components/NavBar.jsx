@@ -89,16 +89,16 @@ const NavBar = () => {
                     <h1 className=' text-[12px] font-semibold text-primary '>MachineRentals.</h1>
                 </div>
                 <li className='p-4 border-b border-gray-300'>
-                    <NavLink to='/' end className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>Home</NavLink>
+                    <NavLink to='/' end className={({ isActive }) => isActive ? 'text-secondary' : 'text-white hover:text-secondary'}>Home</NavLink>
                 </li>
                 <li className='p-4 border-b border-gray-300'>
-                    <NavLink to='/machines' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>Machines</NavLink>
+                    <NavLink to='/machines' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white hover:text-secondary'}>Machines</NavLink>
                 </li>
                 <li className='p-4 border-b border-gray-300'>
-                    <NavLink to='/about' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>About</NavLink>
+                    <NavLink to='/about' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white hover:text-secondary'}>About</NavLink>
                 </li>
                 <li className='p-4 border-b border-gray-300'>
-                    <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white'}>Contact</NavLink>
+                    <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-secondary' : 'text-white hover:text-secondary'}>Contact</NavLink>
                 </li>
             </ul>
         </div>
