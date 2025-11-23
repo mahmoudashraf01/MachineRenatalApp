@@ -1,5 +1,8 @@
 import { memo } from 'react';
-import { FaShieldAlt, FaBolt, FaThLarge, FaHeadset } from "react-icons/fa";
+import { FaBolt } from "react-icons/fa";
+import Verify from '../../assets/verifyVector.svg';
+import VerifyGreen from '../../assets/verifyVectorGreen.svg';
+import Equipment from '../../assets/equipment.svg';
 
 const WhyChoose = () => {
     return (
@@ -16,7 +19,7 @@ const WhyChoose = () => {
                 {/* Card 1 */}
                 <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-2xl">
-                        <FaShieldAlt />
+                        <img src={Verify} alt="" />
                     </div>
                     <h3 className="mt-4 text-lg font-semibold text-gray-900">Verified Companies</h3>
                     <p className="text-gray-600 mt-2 text-sm max-w-xs">
@@ -40,7 +43,7 @@ const WhyChoose = () => {
                 {/* Card 3 */}
                 <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-gray-200 text-gray-700 flex items-center justify-center text-2xl">
-                        <FaThLarge />
+                        <img src={Equipment} alt="" />
                     </div>
                     <h3 className="mt-4 text-lg font-semibold text-gray-900">Wide Equipment Variety</h3>
                     <p className="text-gray-600 mt-2 text-sm max-w-xs">
@@ -52,7 +55,7 @@ const WhyChoose = () => {
                 {/* Card 4 */}
                 <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-green-100 text-green-600 flex items-center justify-center text-2xl">
-                        <FaHeadset />
+                        <img src={VerifyGreen} alt="" />
                     </div>
                     <h3 className="mt-4 text-lg font-semibold text-gray-900">Reliable Support</h3>
                     <p className="text-gray-600 mt-2 text-sm max-w-xs">
