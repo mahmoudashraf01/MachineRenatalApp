@@ -2,19 +2,21 @@ import { memo } from 'react';
 import HeroImg from '../../assets/hero1.jpg'
 import Landing from '../../assets/Landing.jpg'
 import SearchContainer from './SearchContainer';
+import HeavyMachine from '../../assets/heavymachine.jpg'
+import HeavyMachine2 from '../../assets/machine6.jpeg'
 
 const Hero = () => {
     return (
         <div className="relative h-[800px] w-full flex items-center justify-center overflow-hidden">
             <img
-                src={HeroImg}
+                src={HeavyMachine2}
                 alt="hero"
                 className="absolute top-0 left-0 w-full h-full object-cover object-center"
             />
 
-            <div className="absolute inset-0 bg-[#0A25408C]/50"></div>
+            <div className="absolute inset-0 bg-[#0A25408C]/90"></div>
             <div className=' flex flex-col justify-center items-center relative gap-4'>
-                <div className='text-center max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center  md:flex md:flex-col lg:flex-col md:justify-center md:items-center md:gap-15 lg:justify-center lg:items-center relative text-primary md:text-[50px] font-bold drop-shadow-lg max-sm:text-2xl my-10 max-sm:gap-5'>
+                <div className='text-center leading-relaxed flex flex-col justify-center items-center relative text-primary text-[50px] max-md:text-[30px]  font-bold drop-shadow-lg max-sm:text-2xl my-10'>
                     <h1>
                         Rent Heavy Equipment, <span className='text-secondary'>Anytime,</span>
                     </h1>

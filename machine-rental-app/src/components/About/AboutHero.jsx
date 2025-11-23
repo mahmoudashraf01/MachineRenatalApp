@@ -2,16 +2,17 @@ import { memo } from 'react';
 import HeroImg from '../../assets/hero1.jpg'
 import Landing from '../../assets/Landing.jpg'
 import About from '../../assets/About.png'
+import HeavyMachine2 from '../../assets/machine7.jpeg'
 import PrimaryButton from '../buttons/PrimaryButton';
 
 const AboutHero = () => {
     return (<div className="relative h-[500px] w-full flex flex-col items-center justify-center overflow-hidden">
         <img
-            src={About}
+            src={HeavyMachine2}
             alt="hero"
             className="absolute top-0 left-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[#0A2540B2]/80"></div>
+        <div className="absolute inset-0 bg-[#0A2540B2]/70"></div>
         <div className=' flex flex-col justify-center items-center relative'>
             <div className='text-center flex flex-col justify-center items-center relative text-primary text-[50px] font-bold drop-shadow-lg max-sm:text-2xl my-10 leading-relaxed'>
                 <h1>
