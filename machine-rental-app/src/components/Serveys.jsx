@@ -1,9 +1,10 @@
 import { memo } from 'react';
 import { TbQuote } from 'react-icons/tb';
-import Img from '../../assets/img.jpg'
+import Img from '../assets/img.jpg'
 import { LiaStarSolid } from 'react-icons/lia';
 import { FaAngleRight } from 'react-icons/fa6';
 import { FaAngleLeft } from 'react-icons/fa6';
+import Comma from '../assets/comma.svg';
 const Serveys = () => {
     return (
         <div className='flex flex-col justify-center items-center my-7'>
@@ -14,14 +15,16 @@ const Serveys = () => {
             <div className='lg:px-15 px-10 w-full'>
                 <div className=' border flex flex-col border-gray-300 rounded-2xl shadow-2xl w-full '>
                     <div className='relative justify-center items-center'>
-                        <div className='absolute bg-secondary max-sm:w-[50px] max-sm:h-[50px] w-[70px] h-[70px] rounded-[50%] -top-10 max-sm:-top-[25px] left-20 max-sm:left-7'></div>
-                        <TbQuote className='absolute text-3xl text-primary -top-5 left-25 max-sm:left-9 max-sm:-top-4' />
+                        <div className='absolute max-sm:w-[50px] max-sm:h-[50px] w-[70px] h-[70px] rounded-[50%] -top-10 max-sm:-top-[25px] left-20 max-sm:left-7'>
+                            <img src={Comma} alt="" />
+                        </div>
                         <div className=' max-sm:px-10 text-center py-10 px-10 gap-5 flex flex-col justify-center items-center '>
                             <p className='text-center text-[28px] max-sm:text-[15px] leading-relaxed'>
                                 "The variety of equipment available is impressive. We can find  everything we need in one place, from excavators to cranes. Highly  recommended for any construction business."
                             </p>
-                            <div className=' text-center border-b lg:w-300 md:w-180 max-md:w-150 max-sm:w-70 text-[#2E3A4533]'></div>
+                            {/* <div className=' text-center border-b lg:w-300 md:w-180 max-md:w-150 max-sm:w-70 text-[#2E3A4533]'></div> */}
                         </div>
+                        <hr className=' mx-20 mb-8 text-[#2E3A4533]' />
                     </div>
                     <div className='flex pb-10 px-15  gap-2'>
                         <img className='w-12 h-12 rounded-[50%]' src={Img} alt="revey-image" />

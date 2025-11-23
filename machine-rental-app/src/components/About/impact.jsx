@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { FiUsers } from "react-icons/fi";
 import { PiBasketballBold } from "react-icons/pi";
-import { GiBulldozer } from "react-icons/gi";
 import { CiStar } from "react-icons/ci";
+import Excavator from '../../assets/excavator.svg';
 
 
 
@@ -22,7 +22,7 @@ const Impact = () => {
                 {/* Card 1 */}
                 <div className="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center w-full">
                     <div className="w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-2xl">
-                        <GiBulldozer />
+                        <img src={Excavator} alt="" />
                     </div>
                     <h3 className="mt-4 text-lg font-semibold text-primaryBtn">1000+</h3>
                     <p className="text-gray-600 mt-2 text-sm max-w-xs">
