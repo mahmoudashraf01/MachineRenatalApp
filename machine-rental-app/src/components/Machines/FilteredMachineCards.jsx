@@ -3,6 +3,7 @@ import machineImg from '../../assets/machine_item.png'
 import { AiOutlineVerified } from 'react-icons/ai';
 import { BiMap } from 'react-icons/bi';
 import { BsShieldCheck } from 'react-icons/bs';
+import { NavLink } from 'react-router-dom';
 
 const FilteredMachineCard = () => {
     return (
@@ -36,9 +37,11 @@ const FilteredMachineCard = () => {
                     <h1 className='text-secondary font-bold text-2xl'>820$</h1>
                     <p className='text-gray-500 text-[12px]'>per day</p>
                 </div>
-                <button className='w-32 h-9 border border-primaryBtn rounded-md font-medium text-primaryBtn'>
-                    View Details
-                </button>
+                <NavLink to = '/viewDetails'>
+                    <button className='w-32 h-9 border border-primaryBtn rounded-md font-medium text-primaryBtn'>
+                        View Details
+                    </button>
+                </NavLink>
             </div>
         </div>
     );

@@ -7,6 +7,9 @@ import NavbarLayout from './layouts/Layout'
 import Contact from './pages/contact';
 import Machines from './pages/MAchines';
 import About from './pages/About';
+import ViewDetails from './pages/ViewDetails';
+// import AppRouters from './Helpers/Routes/AppRoutes'
+
 
 
 function App() {
@@ -22,6 +25,7 @@ function App() {
         { path: 'machines', element: <Machines /> },
         { path: 'contact', element: <Contact /> },
         { path: 'about', element: <About /> },
+        { path: 'viewDetails', element: <ViewDetails /> },
         { path: '*', element: <Landing /> },
       ],
     },
