@@ -9,7 +9,7 @@ const MachinesFilter = () => {
     const [availableOnly, setAvailableOnly] = useState(false);
 
     return (
-        <div className="w-full max-w-xs bg-white rounded-xl shadow p-6 space-y-6">
+        <div className="w-full lg:max-w-xs md:max-w-xs bg-white rounded-xl shadow p-6 space-y-6">
             {/* Title */}
             <h2 className="text-xl font-bold text-gray-900">FILTERS</h2>
 
