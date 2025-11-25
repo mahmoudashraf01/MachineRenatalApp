@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import PrimaryButton from './buttons/PrimaryButton';
 import SecondaryButton from './buttons/SecondaryButton';
-import Logo from '../assets/logo2.svg';
+import Logo from '../assets/logocontainer.svg';
 
 const NavBar = () => {
     const [nav, setNav] = useState(true);
