@@ -2,7 +2,7 @@ import { memo } from "react";
 
 const TechnicalSpecifications = () => {
     return (
-        <div className="w-full flex flex-col gap-6 animate-fade-in-delay-2">
+        <div className="w-full flex flex-col gap-6">
 
             {/* Title Section */}
             <div>

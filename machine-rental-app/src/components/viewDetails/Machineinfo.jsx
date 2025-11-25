@@ -1,8 +1,21 @@
 import { memo, useState } from 'react';
 import TechnicalSpecifications from './TechnicalSpecifications';
+import MachineMoreImages from './MachineMoreImages';
 
 const Machineinfo = () => {
     const [activeTab, setActiveTab] = useState("specs");
+    const [animating, setAnimating] = useState(false);
+
+    const handleTabChange = (tab) => {
+        if (tab === activeTab) return;
+
+        setAnimating(true);
+
+        setTimeout(() => {
+            setActiveTab(tab);
+            setAnimating(false);
+        }, 600);
+    };
 
     return (
         <div className='w-full flex flex-col rounded-md shadow-2xl bg-white p-4 md:p-8'>
@@ -10,20 +23,20 @@ const Machineinfo = () => {
             {/* Tabs */}
             <div className='flex gap-5 max-sm:justify-between  pb-3'>
                 <button
-                    onClick={() => setActiveTab("specs")}
-                    className={`text-base font-medium pb-2 ${activeTab === "specs"
-                        ? "text-navColor border-b-2 border-secondary"
-                        : "text-[#0A254066]"
+                    onClick={() => handleTabChange("specs")}
+                    className={`text-base  font-medium pb-2 ${activeTab === "specs"
+                        ? "text-navColor border-b-2 transition-colors duration-150 border-secondary"
+                        : "text-[#0A254066] hover:text-navColor"
                         }`}
                 >
                     Specifications
                 </button>
 
                 <button
-                    onClick={() => setActiveTab("photos")}
+                    onClick={() => handleTabChange("photos")}
                     className={`text-base font-medium pb-2 ${activeTab === "photos"
                         ? "text-navColor border-b-2 transition-colors duration-150 border-secondary"
-                        : "text-[#0A254066]"
+                        : "text-[#0A254066] hover:text-navColor"
                         }`}
                 >
                     Photos/Gallery
@@ -31,16 +44,17 @@ const Machineinfo = () => {
             </div>
 
             {/* Content */}
-            <div className='mt-5'>
-                {activeTab === "specs" && (
-                    <TechnicalSpecifications />
-                )}
+            <div className="relative overflow-hidden mt-5">
 
-                {activeTab === "photos" && (
-                    <h1 className='text-xl font-semibold text-navColor'>
-                        Photos
-                    </h1>
-                )}
+                <div className={
+                    `
+        ${animating ? "slide-exit-active" : "slide-enter-active"}
+        `
+                }>
+                    {activeTab === "specs" && <TechnicalSpecifications />}
+                    {activeTab === "photos" && <MachineMoreImages />}
+                </div>
+
             </div>
         </div>
     );
