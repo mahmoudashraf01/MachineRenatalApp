@@ -7,7 +7,7 @@ const MightLikeMachines = () => {
         <div className='flex flex-col gap-6 py-5 w-full'>
             <div className='flex max-sm:flex-col max-md:flex-col max-sm:gap-3 max-md:gap-3 justify-between'>
                 <div className='flex lg:justify-start lg:items-start justify-center items-center flex-col gap-7'>
-                    <h1 className='text-[40px] font-semibold'>You Might Also Like</h1>
+                    <h1 className='leading-relaxed text-[40px] font-semibold'>You Might Also Like</h1>
                     <p className='text-gray-500'>Similar machines that might interest you</p>
                 </div>
                 <div className=' flex lg:justify-end justify-center items-center'>

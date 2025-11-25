@@ -8,8 +8,8 @@ const Equipments = () => {
     return (
         <div className='flex flex-col justify-center items-center w-full bg-equipmentBg pb-10'>
             <div className='flex flex-col gap-10 justify-center items-center my-20 mx-auto'>
-                <h1 className='leading-normal text-center lg:text-[40px] md:text-[40px] font-bold max-sm:text-[30px]'>Popular Heavy Equipment</h1>
-                <p className='leading-normal text-center text-[20px] max-sm:text-[13px]'>Verified listings from trusted suppliers. Find the perfect machine for your project.</p>
+                <h1 className='leading-normal text-center text-[40px] font-bold max-sm:text-[30px]'>Popular Heavy Equipment</h1>
+                <p className='leading-normal text-center text-[20px]'>Verified listings from trusted suppliers. Find the perfect machine for your project.</p>
             </div>
             <div className='grid md:grid-cols-2  mx-auto lg:grid-cols-3 sm:grid-cols-1 gap-10'>
                 <MachineCard />

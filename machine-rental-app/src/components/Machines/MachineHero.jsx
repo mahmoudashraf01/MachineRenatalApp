@@ -8,7 +8,7 @@ const MachineHero = () => {
     return (<div className="relative bg-[#1F6FEB17] h-[600px] w-full flex flex-col items-center justify-center overflow-hidden">
 
         <div className=' flex flex-col justify-center items-center py-10 relative'>
-            <div className='text-center py-5 flex flex-col justify-center items-center relative text-primary text-[50px] font-bold drop-shadow-lg max-sm:text-2xl leading-relaxed'>
+            <div className='text-center py-5 flex flex-col justify-center items-center relative text-primary text-[50px] font-bold  max-sm:text-2xl leading-relaxed'>
                 <h1 className='text-primaryBtn'>
                     Find the Right Equipment <span className='text-secondary'> for Your</span>
                 </h1>
