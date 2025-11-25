@@ -1,8 +1,5 @@
 import { memo } from 'react';
-import HeroImg from '../../assets/hero1.jpg'
-import Landing from '../../assets/Landing.jpg'
 import SearchContainer from './SearchContainer';
-import HeavyMachine from '../../assets/heavymachine.jpg'
 import HeavyMachine2 from '../../assets/machine6.jpeg'
 
 const Hero = () => {
