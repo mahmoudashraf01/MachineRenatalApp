@@ -1,5 +1,4 @@
 import { memo } from 'react';
-import { TbQuote } from 'react-icons/tb';
 import Img from '../assets/img.jpg'
 import { LiaStarSolid } from 'react-icons/lia';
 import { FaAngleRight } from 'react-icons/fa6';
