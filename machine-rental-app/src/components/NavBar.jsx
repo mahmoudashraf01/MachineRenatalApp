@@ -82,11 +82,8 @@ const NavBar = () => {
                 {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
             <ul className={!nav ? 'fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full z-50 bg-navColor ease-in-out duration-500' : 'fixed -left-full top-0 w-[60%] border-r border-r-gray-900 h-full bg-navColor z-50 ease-in-out duration-500'}>
-                <div className='flex items-center py-4 px-4 gap-3'>
-                    <button className='bg-secondary w-12 h-10 p-2.5  rounded-md text-[12px] font-medium'>
-                        Logo
-                    </button>
-                    <h1 className=' text-[12px] font-semibold text-primary '>MachineRentals.</h1>
+                <div className='flex items-center py-7 px-4 gap-3'>
+                    <img src={Logo} alt="" className='w-60'/>
                 </div>
                 <li className='p-4 border-b border-gray-300'>
                     <NavLink to='/' end className={({ isActive }) => isActive ? 'text-secondary' : 'text-white hover:text-secondary'}>Home</NavLink>
