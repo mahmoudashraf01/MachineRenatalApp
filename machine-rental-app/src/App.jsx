@@ -8,6 +8,7 @@ import Contact from './pages/contact';
 import Machines from './pages/MAchines';
 import About from './pages/About';
 import ViewDetails from './pages/ViewDetails';
+import TechnicalSpecifications from './components/viewDetails/TechnicalSpecifications';
 // import AppRouters from './Helpers/Routes/AppRoutes'
 
 
@@ -26,6 +27,7 @@ function App() {
         { path: 'contact', element: <Contact /> },
         { path: 'about', element: <About /> },
         { path: 'viewDetails', element: <ViewDetails /> },
+        { path: 'technicalSpecifications', element: <TechnicalSpecifications /> },
         { path: '*', element: <Landing /> },
       ],
     },
