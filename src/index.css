@@ -16,6 +16,10 @@
   --color-secondary: #F6C90E;
   --color-navColor: #0A2540;
   --color-equipmentBg: rgba(244, 245, 247, 1)
+  --color-orange: #F38E3D;
+  --color-red: #D64545;
+  --color-teal: #1B9C85;
+  --color-gray: #E0E4E7;
 
   /* Animation */
   --animate-fade-in: fade-in 0.7s ease-out forwards;

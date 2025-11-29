@@ -36,7 +36,7 @@ const Footer = () => {
                         <div className='flex justify-center'>
                             <div className='flex flex-col gap-3'>
                                 <h1 className='text-[20px] max-sm:text-[10px] text-primary font-semibold'>Follow Us</h1>
-                                <div className='flex items-center gap-2.5'>
+                                <div className='grid grid-cols-3 max-sm:grid-cols-2 items-center gap-2.5'>
                                     <div className='flex justify-center items-center text-primary  bg-primaryBtn max-sm:w-[35px] max-sm:h-[35px] w-[55px] h-[55px] rounded-[50%]'>
                                         <TbBrandFacebook className='text-center text-2xl max-sm:text-xl' />
                                     </div>
